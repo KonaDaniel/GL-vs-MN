@@ -1,0 +1,192 @@
+<html>
+<head>
+  <title>Case Study between Google Lens and MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="background_img.jpg">
+
+    <h2>CASE STUDY BETWEEN: </h2>
+        <br>
+        <p class="names">Google Lens<img id="logo" src="gl_logo.png"></p><br>
+       <p style="font-weight: bold; color: red; font-size: 18px;">VS</p> <br>
+        <div class="btn btn-primary names">MobileNet</div>
+    <ol>
+        <hr>
+
+        <div class="test_img_res btn">
+            <li class="col-sm-4 col-xs-12">                  
+                <b>Bottle        - </b>
+                <img class="imgs" src="bottle_img2.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>Google Lens</b> - 
+                <span>Cello h20 Unbreakable Bottle</span>
+            </h5>
+               
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>MobileNet</b> - 
+                <span>Refrigerator and Icebox</span>
+            </h5>
+
+            <div class="min_result col-xs-12" >
+               <h4 style="font-size: 18px; font-family:cursive ;">Result:</h4>
+               <hr>
+               <h4>Google Lens</h4>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="test_img_res btn">
+            <li class="col-sm-4 col-xs-12">
+                <b>Couch - </b>
+                <img class="imgs" src="couch_imgtest.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>Google Lens</b> - 
+                <span>Turner Slope Arm Sleeper Sofa</span>
+            </h5>
+               
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>MobileNet</b> - 
+                <span>Studio Couch</span>
+            </h5>
+
+            <div class="min_result col-xs-12" >
+               <h4 style="font-size: 18px; font-family:cursive;">Result:</h4>
+               <hr>
+               <h4>MobileNet</h4>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="test_img_res btn">
+            <li class="col-sm-4 col-xs-12">
+                <b>Cupboard - </b>
+                <img class="imgs" src="cupboard_img1.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>Google Lens</b> - 
+                <span>Mozart 3 - door Mirror Wardrobe</span>
+            </h5>
+               
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>MobileNet</b> - 
+                <span>Wardrobe</span>
+            </h5>
+
+            <div class="min_result col-xs-12" >
+               <h4 style="font-size: 18px; font-family:cursive;">Result:</h4>
+               <hr>
+               <h4>Draw</h4>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="test_img_res btn">
+            <li class="col-sm-4 col-xs-12">
+                <b>Door - </b>
+                <img class="imgs" src="door_img5.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>Google Lens</b> - 
+                <span>Aluminium Door</span>
+            </h5>
+               
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>MobileNet</b> - 
+                <span>Sliding Door</span>
+            </h5>
+
+            <div class="min_result col-xs-12" >
+               <h4 style="font-size: 18px; font-family:cursive;">Result:</h4>
+               <hr>
+               <h4>Draw</h4>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="test_img_res btn">
+            <li class="col-sm-4 col-xs-12">
+                <b>Mobile - </b>
+                <img class="imgs" src="mobile_img3.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>Google Lens</b> - 
+                <span>Galaxy S20 25G</span>
+            </h5>
+               
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>MobileNet</b> - 
+                <span>Television System</span>
+            </h5>
+
+            <div class="min_result col-xs-12" >
+               <h4 style="font-size: 18px; font-family:cursive;">Result:</h4>
+               <hr>
+               <h4>Google Lens</h4>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="test_img_res btn">
+            <li class="col-sm-4 col-xs-12">
+                <b>Watch - </b>
+                <img class="imgs" src="watch_img4.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>Google Lens</b> - 
+                <span>OnePlus Circle Smart Watch</span>
+            </h5>
+               
+            <h5 class="col-sm-4 col-xs-12 comp_lbl" >
+                Output on <b>MobileNet</b> - 
+                <span>Digital Watch</span>
+            </h5>
+
+            <div class="min_result col-xs-12" >
+               <h4 style="font-size: 18px; font-family:cursive;">Result:</h4>
+               <hr>
+               <h4>Draw</h4>
+            </div>
+
+        </div>
+
+    </ol>
+
+    <div class="col-sm-4 col-xs-12 btn conclusion">
+        <h4>I have tested <b>6</b> Images.</h4>
+        <h4>Out of which, <b>Google Lens</b> has accurately Guessed <b>2</b> and <b>MobileLens</b> has accurately Guessed <b>1</b> </h4>
+        <h4>And there were <b>3 ties</b></h4>
+        <h4> So in conclusion, <b>Google Lens</b> is more <b>Accurate.</b></h4>
+    </div>
+
+    <div class="col-sm-4 col-xs-12 btn copy_right_footer">
+        <h4>Developed by - <br> Konathung Daniel Patton</h4>
+    </div>
+
+</body>
+</html>
